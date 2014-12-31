@@ -1,0 +1,5 @@
+puts("Type a number from 1-9 :")
+userinput = gets().chomp()
+puts("This works! Concatenate a string and your number which is also a string: " + userinput)
+puts("However this does not work! add your string input plus the number 10: ")
+puts(userinput + 6)
