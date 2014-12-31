@@ -6,7 +6,6 @@ guess_the_number_v*.rb - the following error occurs when executed, likely due to
 		from guess_the_number_v2.rb:2
 Conditionals 2.3 Quiz - the blue numbers and blue arrows to the left of the first few questions are confusing.
 
-my_calculator.rb - I used && operators which worked but I"m not 100% sure why && worked and || did not.
 
 
 --- Resume at: Logical Operators 2.4
