@@ -1,7 +1,8 @@
 Image sources:
 
-Barcode:
+Barcode, barcode.png:
 	http://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Intelligent_Mail_Barcode_Wiki22.png/381px-Intelligent_Mail_Barcode_Wiki22.png
-Grumpy Cat:
+
+Grumpy Cat, grumpycat.png:
 	http://cdn.grumpycats.com/wp-content/uploads/2012/11/Screen-Shot-2012-11-05-at-12.29.07-AM.png
 
