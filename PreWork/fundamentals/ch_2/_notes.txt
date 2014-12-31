@@ -1,0 +1,9 @@
+age.rb - uses the chomp method in the example but has no consequence b/c we're not concatenating strings togetehr to see its negative effects.
+
+guess_the_number_v*.rb - error when run:
+	npupillo:ch_2 npup$ ruby guess_the_number_v2.rb 
+	guess_the_number_v2.rb:2:in `rand': can't convert Range into Integer (TypeError)
+		from guess_the_number_v2.rb:2
+Conditionals 2.3 Quiz - the blue numbers and blue arrows to the left of the first few questions are confusing.
+
+--- Resume at: Logical Operators 2.4
