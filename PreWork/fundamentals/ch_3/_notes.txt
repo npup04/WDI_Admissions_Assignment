@@ -1,0 +1,2 @@
+typo on http://generalassembly.gitbooks.io/wdi-fundamentals/content/04_collections/01_text_intro.html
+says ch_4 not ch_3
