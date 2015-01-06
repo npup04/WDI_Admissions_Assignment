@@ -1,6 +1,6 @@
 # From: Collections 3.3
 
-#Looping solution ...
+#'while' loop solution ...
 
 #Assign the value above to a new variable called album_array
 album_array = ["Thriller", "1982", "Michael Jackson", "Epic Records", ["Wanna Be Startin' Somethin", "Baby Be Mine", "The Girl In My Life"]]
@@ -12,40 +12,25 @@ album_hash = {
 	"title" => nil,
 	"year_released" => nil,
 	"artist" => nil,
-	"label" => nil,
+	"label" => "Dogfish Label",
 	"tracks" => nil
 }
 
-#Look at the .keys() method available to hashes at http://www.ruby-doc.org/core-2.1.2/Hash.html#method-i-keys
-# What does it return? --It returns an array
-new_album_hash = album_hash.keys()
-puts new_album_hash
-
-album_hash["title"] = album_array[0]
-album_hash["year_released"] = album_array[1]
-album_hash["artist"] = album_array[2]
-album_hash["label"] = album_array[3]
-album_hash["tracks"] = album_array[4]
-
-album_hash.sort
-album_hash.each {|key, value| puts "#{key}:#{value}"}
-
-
-#puts album_hash.keys.inspect
-#puts album_hash.values.inspect
-
-#puts(album_array.count())
-#puts(album_hash[0])
-#puts(album_array[0])
-
-=begin
 index = 0
-while index < album_array.count()
-	album_hash["title"] = album_array[index]
+
+#Verify the contents of album_hash
+#puts(album_hash.keys[index] + " - "+ album_hash.values[index])
+
+#Verify the contents of album_array
+#puts(album_array[index])
+
+#puts(album_hash.keys[index] + " - "+ album_hash.values[index])
+#puts(album_hash.keys[index] + " : "+ album_array[index])
+
+hash_keys_count = album_hash.keys().count()
+
+while index < hash_keys_count
+	album_hash.keys[index] = album_array[index]
+	puts(album_hash.keys[index] + " : "+ album_array[index].to_s)
+    index = index + 1	
 end
-
-
-puts album_hash.index("Thriller")
-puts album_hash.keys.inspect
-puts album_hash.values.inspect
-=end

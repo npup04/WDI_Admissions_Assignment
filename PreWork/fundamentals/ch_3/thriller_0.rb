@@ -1,6 +1,6 @@
 # From: Collections 3.3
 
-#Non looping solution ...
+#Non 'while' loop solution ...
 
 #Assign the value above to a new variable called album_array
 album_array = ["Thriller", "1982", "Michael Jackson", "Epic Records", ["Wanna Be Startin' Somethin", "Baby Be Mine", "The Girl In My Life"]]
@@ -25,5 +25,10 @@ album_hash["artist"] = album_array[2]
 album_hash["label"] = album_array[3]
 album_hash["tracks"] = album_array[4]
 
-puts album_hash.keys.inspect
-puts album_hash.values.inspect
+album_hash.each do |key, value|
+    puts(key.to_s + " : "+ value.to_s)
+end
+
+#Verify that the values in the array have actually overwritten the corresponding values in the hash
+#puts(album_array.inspect)
+#puts(album_hash.inspect)

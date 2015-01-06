@@ -4,7 +4,12 @@ names["firstname"] = "Samuel"
 names["middlename"] = "L"
 names["lastname"] = "Jackson"
 
-#=begin
+names.keys.each_with_index do |(key, value), index|
+	puts("key: #{key}, value: #{value}, index: #{index}\n")
+end
+
+
+=begin
 #Find size of names hash
 #puts(names.size())
 puts "The size of the hash is #{names.size}"
@@ -30,4 +35,4 @@ names.sort
 names.each do |key, val|
 puts "#{key}"
 end
-#=end
+=end

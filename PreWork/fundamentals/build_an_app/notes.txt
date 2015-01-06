@@ -1,0 +1,9 @@
+Issue - resolved:
+	- when I first tried to run the rails server then preview it in the browser (Preview: Port 3000) the page had an error of:
+		ActiveRecord::PendingMigrationError
+		Migrations are pending. To resolve this issue, run: bin/rake db:migrate RAILS_ENV=development
+		Rails.root: /home/action/workspace/wdi-fundamentals/movies_app
+	- this solution worked: http://stackoverflow.com/questions/24339902/rails-app-error-activerecordpendingmigrationerror-migrations-are-pending-ru
+	- explanation: just run rake db:migrate then start server, see then what happens, looks like existing migrations are yet not part of schema. 
+
+url for testing app: http://wdi-fundamentals-181531.use1-2.nitrousbox.com/movies/new
