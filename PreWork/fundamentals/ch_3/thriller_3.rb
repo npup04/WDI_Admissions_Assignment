@@ -30,6 +30,7 @@ album_hash.update(album_array_hash)
 album_hash.each do |key, value|
     puts(key.to_s + " : "+ value.to_s)
 end
+
 #One way to make a new hash out of an array:
 #album_array_hash = Hash[album_array.each_with_index.map { |value, index| [index, value]}]
 
