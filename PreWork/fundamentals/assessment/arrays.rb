@@ -55,4 +55,3 @@ puts("The quantity of numbers being averaged is: " + num_array.count().to_s)
 
 #	- Display the average to the user.
 puts("The average of the numbers is: " + average.to_s)
-
