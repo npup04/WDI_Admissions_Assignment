@@ -1,6 +1,7 @@
 # From: Collections 3.3
 
-#Non 'while' loop solution ...
+#This version:
+# directly assigns the array index to the album_hash key
 
 #Assign the value above to a new variable called album_array
 album_array = ["Thriller", "1982", "Michael Jackson", "Epic Records", ["Wanna Be Startin' Somethin", "Baby Be Mine", "The Girl In My Life"]]

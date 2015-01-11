@@ -14,6 +14,15 @@ album_hash = {
 	"tracks" => nil
 }
 
+puts("Display the album_hash: ")
+album_hash.each do |key, value|
+    puts(key.to_s + " : "+ value.to_s)
+end
+
+puts("---")
+puts("Display the album_array: ")
+puts(album_array)
+
 #Create a new array from the album_hash keys
 new_array_from_hash_keys = album_hash.keys
 #puts(new_array_from_hash_keys)
@@ -24,9 +33,21 @@ album_array_hash = Hash[new_array_from_hash_keys.zip(album_array)]
 # puts(album_hash.inspect)
 # puts(album_array_hash.inspect)
 
-album_hash.update(album_array_hash)
-# puts(album_hash.inspect)
+#Display the album_array_hash
+puts("---")
+puts("Display the album_array_hash: ")
+album_array_hash.each do |key, value|
+    puts(key.to_s + " : "+ value.to_s)
+end
 
+
+#Copy the album_array_hash to the album_hash
+album_hash.update(album_array_hash)
+
+#Display the album_hash
+
+puts("---")
+puts("Display the album_hash: ")
 album_hash.each do |key, value|
     puts(key.to_s + " : "+ value.to_s)
 end

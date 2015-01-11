@@ -14,20 +14,23 @@ album_hash = {
 	"tracks" => nil
 }
 
-#Create a new array from the album_hash keys
-new_array_from_hash_keys = album_hash.keys
-#puts(new_array_from_hash_keys)
-
-#Make a a new hash out of 2 arrays:
-# http://stackoverflow.com/questions/12695135/combining-two-arrays-into-a-hash
-album_array_hash = Hash[new_array_from_hash_keys.zip(album_array)]
-# puts(album_hash.inspect)
-# puts(album_array_hash.inspect)
-
-album_hash.update(album_array_hash)
-# puts(album_hash.inspect)
-
+# Display the initial hash
+puts("---")
+puts("1. Display the album_hash: ")
 album_hash.each do |key, value|
     puts(key.to_s + " : "+ value.to_s)
 end
 
+# Assign the album_array contents to the values of the hash
+index = 0
+while index < album_hash.keys().count()
+  album_hash[album_hash.keys[index]] = album_array[index]
+    index = index + 1
+end
+
+# Display the hash after the assignment
+puts("---")
+puts("2. Display the album_hash: ")
+album_hash.each do |key, value|
+    puts(key.to_s + " : "+ value.to_s)
+end

@@ -1,8 +1,8 @@
 # From: Collections 3.3
 
 #This version:
-# doesn't actually assign new values to the hash
-# and in Ruby 1.8.7 the hash's keys do NOT display in the same order as they are in the original hash
+# just displays the hash key and the array value. It doesn't actually assign new values to the hash
+# Note:  in Ruby 1.8.7 the hash's keys do NOT display in the same order as they are in the original hash
 # meanwhile in Ruby 2.1.1 the hash's keys DO display in the same order as they are in the original hash
 
 
@@ -23,5 +23,6 @@ album_hash = {
 index = 0
 while index < album_hash.keys().count()
 	puts(album_hash.keys[index] + " : "+ album_array[index].to_s)
-    index = index + 1	
+    index = index + 1
 end
+
