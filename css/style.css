@@ -1,0 +1,80 @@
+body {
+	font-family: Arial, Helvetica;
+}
+#container {
+	border: 3px solid black;
+	width: 1200px;	
+	padding-top: 5px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+}
+#greeting {
+	border: 1px red dashed;
+	float: left;
+	margin: 	0px 5px;
+	padding: 0px 10px;
+	vertical-align: top;
+}
+h3 {
+	color: black;
+	font-size: 14px
+}
+
+#stampcaption {
+	margin: -20px 0;
+}
+#stamp {
+	border: 1px black dashed;
+	padding: 5px;
+	margin-right: 5px;
+	float: right;
+}
+#thumbnails{
+	border: 0px red solid;	
+	width: 110px;
+	float: left;
+}
+.thumb {
+	margin: 0 5px;
+	width: 100px;
+	height: 75px;
+	padding-bottom: 7px;
+	cursor: pointer;
+}
+#imgcenter {
+	border: 0px green solid;
+	text-align: left;
+	
+}
+#address {
+	border: 0px green solid;
+	color: red;
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+	width: 400px;
+	padding: 100px 50px 0 0;
+	float: right;
+}
+#clearfloat {
+	clear: both;
+}
+#maintext {
+	width: 80%;
+	padding: 0 5px;
+	text-align: left;
+
+}
+h6 {
+	font-size: 18px;
+	font-family: 'Permanent Marker', cursive;
+}
+#barcode {
+	border: 0px blue solid;
+	border-top: 1px #ccc dashed;
+	padding: 2px 0 0 5px;
+	text-align: left;
+}
+#barcodenumb {
+	font-size: 12px;
+}
